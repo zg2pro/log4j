@@ -379,6 +379,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           <excludedocfilessubdir>.svn</excludedocfilessubdir>
           <encoding>UTF-8</encoding>
           <docEncoding>UTF-8</docEncoding>
+           <additionalparam>-Xdoclint:none</additionalparam>
         </configuration>
         <executions>
           <execution>
@@ -460,7 +461,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
         </plugin>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.1</version>
+        <version>3.3</version>
         <executions>
           <execution>
             <phase>package</phase>
